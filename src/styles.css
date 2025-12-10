@@ -13,8 +13,9 @@
 body{
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; 
   margin:0; 
-  color:#0f172a;
+  color:#111827;
   line-height: 1.6;
+  background: #f9fafb;
 }
 
 .app{min-height:100vh; display:flex; flex-direction:column;}
@@ -58,14 +59,17 @@ body{
 }
 
 /* Page Layout */
-.page{max-width:1100px; margin:30px auto; padding:20px;}
-.page-subtitle{color: var(--muted); font-size: 1.1rem; margin-bottom: 30px;}
+.page{max-width:1100px; margin:30px auto; padding:20px; background: white; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);}
+.page h2{color: var(--green); font-size: 2rem; margin: 0 0 12px; font-weight: 700;}
+.page p{color: #374151; line-height: 1.7; margin: 0 0 16px;}
+.page-subtitle{color: #4b5563; font-size: 1.1rem; margin-bottom: 30px; line-height: 1.7;}
 
 /* Hero Section */
 .hero{
-  background: linear-gradient(180deg, rgba(31,111,59,0.08), rgba(255,255,255,0)); 
+  background: white; 
   border-radius: 16px; 
   padding: 50px 40px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
 .hero-badge{
@@ -86,7 +90,7 @@ body{
   font-weight: 800;
   line-height: 1.1;
   margin: 0 0 20px;
-  color: #1a1a1a;
+  color: #111827;
 }
 
 .hero-title-accent{
@@ -106,9 +110,10 @@ body{
 
 .hero-description{
   font-size: 1.1rem;
-  color: var(--muted);
+  color: #374151;
   margin: 0 0 30px;
   max-width: 500px;
+  line-height: 1.7;
 }
 
 .hero-cta{
@@ -245,7 +250,8 @@ body{
 }
 .project-info p{
   margin: 0;
-  color: var(--muted);
+  color: #374151;
+  line-height: 1.7;
 }
 
 /* Services Page */
@@ -291,7 +297,8 @@ body{
 }
 .service-content p{
   margin: 0;
-  color: var(--muted);
+  color: #374151;
+  line-height: 1.7;
 }
 
 /* CTA Section */
@@ -299,12 +306,17 @@ body{
   text-align: center;
   margin-top: 50px;
   padding: 40px;
-  background: linear-gradient(135deg, rgba(31,111,59,0.08), rgba(47,133,90,0.05));
+  background: white;
   border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 .cta-section h3{
   margin: 0 0 16px;
   color: var(--green);
+}
+.cta-section p{
+  color: #374151;
+  line-height: 1.7;
 }
 
 /* Forms */
